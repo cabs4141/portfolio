@@ -7,6 +7,7 @@ import AboutMe from "./components/AboutMe";
 import NextNav from "./components/NextNav";
 import Sertifikat from "./components/Sertifikat";
 import ContactMe from "./components/ContactMe";
+import { SpotLight } from "./components/SpotLight";
 
 function App() {
   const navItems = [
@@ -19,8 +20,8 @@ function App() {
 
   return (
     <>
-      <NextNav navItems={navItems} />
-      <AuroraBgDemo id="section5" />
+      <SpotLight />
+      {/* <AuroraBgDemo id="section5" /> */}
       <AboutMe id="section1" />
       <Project id="section2" />
       <Skills id="section3" />

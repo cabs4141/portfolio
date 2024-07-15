@@ -6,7 +6,7 @@ const AboutCard = () => {
   const [isFollowed, setIsFollowed] = React.useState(false);
 
   return (
-    <Card className="lg:max-w-[640px] max-w-[320px] sm:max-w-[480px] max-h-[440px] sm:max-h-[240px] mb-60 xl:min-h-[300px] xl:mt-40">
+    <Card className="lg:max-w-[640px] max-w-[320px] sm:max-w-[480px] max-h-[440px] sm:max-h-[80px] mb-60 xl:min-h-[300px] mt-32 xl:mt-72">
       <CardHeader className="justify-between">
         <div className="flex gap-5">
           <Avatar isBordered radius="full" size="md" src={profile3} />

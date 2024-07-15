@@ -14,12 +14,10 @@ import express from "../../assets/icons/Express.png";
 export function Skills({ id }) {
   return (
     <div id={id} className="h-screen gap-10 rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.03] items-center justify-center relative overflow-hidden">
-      <div className=" w-full flex justify-center xl:mb-20 sm:mb-6  ">
+      <div className=" w-full flex justify-center xl:mb-10 sm:mb-6  ">
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500">Specified Skills</p>
       </div>
-      <p className="text-neutral-500 px-8 max-w-lg mx-auto my-2 text-base md:text-md text-center relative z-10 mt-2 md:mt-4">
-        Semua specified skill yang muter dibawah masih belum expert, karna saya pemula, maka dari itu ajarin dong bang 😥
-      </p>
+      <p className="text-neutral-500 px-8 max-w-lg mx-auto mb-8 text-base md:text-md text-center relative z-10  ">Semua skill yang muter dibawah masih belum expert, karna saya masih pemula 😌</p>
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
     </div>
   );

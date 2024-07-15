@@ -4,7 +4,7 @@ import ContactButton from "./contactme";
 
 const NextNav = ({ navItems }) => {
   return (
-    <Navbar shouldHideOnScroll className="relative">
+    <Navbar className=" bg-transparent">
       <NavbarBrand className="absolute left-1/2 transform -translate-x-1/2 sm:relative sm:left-0 sm:transform-none">
         <p className="font-bold text-inherit bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-4 md:mt-0">P, INFO LOKER</p>
       </NavbarBrand>

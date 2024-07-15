@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardHeader, CardBody, CardFooter, Avatar, Button } from "@nextui-org/react";
+import profile3 from "../../assets/img/profile3.jpg";
 
 const AboutCard = () => {
   const [isFollowed, setIsFollowed] = React.useState(false);
@@ -8,7 +9,7 @@ const AboutCard = () => {
     <Card className="lg:max-w-[640px] max-w-[320px] sm:max-w-[480px] max-h-[440px] sm:max-h-[240px] mb-60 xl:min-h-[300px] xl:mt-40">
       <CardHeader className="justify-between">
         <div className="flex gap-5">
-          <Avatar isBordered radius="full" size="md" src="/src/assets/img/profile3.jpg" />
+          <Avatar isBordered radius="full" size="md" src={profile3} />
           <div className="flex flex-col gap-1 items-start justify-center">
             <h4 className="text-small font-semibold leading-none text-default-600">Binda Adib Rama Samudra</h4>
             <h5 className="text-small tracking-tight text-default-400">@bindarama_</h5>

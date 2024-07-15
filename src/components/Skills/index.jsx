@@ -1,6 +1,15 @@
-"use client";
-
 import { InfiniteMovingCards } from "./infinite-moving-cards";
+import javascript from "../../assets/icons/javascript.png";
+import node from "../../assets/icons/node.png";
+import mysql from "../../assets/icons/mysql.png";
+import tailwind from "../../assets/icons/Tailwind CSS.png";
+import vite from "../../assets/icons/Vite.js.png";
+import docker from "../../assets/icons/Docker.png";
+import github from "../../assets/icons/github.png";
+import podman from "../../assets/icons/pngaaa.com-5307940.png";
+import postman from "../../assets/icons/Postman.png";
+import react from "../../assets/icons/react.png";
+import express from "../../assets/icons/Express.png";
 
 export function Skills({ id }) {
   return (
@@ -20,58 +29,58 @@ const testimonials = [
   {
     quote: "Javascript",
     name: "Bahasa pemrograman yang selalu saya gunakan ketika development aplikasi atau website.",
-    image: "/src/assets/icons/javascript.png",
+    image: javascript,
   },
   {
     quote: "Node.js",
     name: "JavaScript runtime yang memungkinkan untuk menjalankan JavaScript di sisi server.",
-    image: "/src/assets/icons/node.png",
+    image: node,
   },
   {
     quote: "MySQL",
     name: "Sistem manajemen basis data relasional open-source yang digunakan untuk menyimpan data aplikasi.",
-    image: "/src/assets/icons/mysql.png",
+    image: mysql,
   },
 
   {
     quote: "Tailwind CSS",
     name: "Framework CSS utilitarian untuk membangun antarmuka pengguna yang responsif.",
-    image: "/src/assets/icons/Tailwind CSS.png",
+    image: tailwind,
   },
   {
     quote: "Vite",
     name: "Bundler dan development server yang cepat untuk aplikasi web modern.",
-    image: "/src/assets/icons/Vite.js.png",
+    image: vite,
   },
   {
     quote: "Docker",
     name: "Platform untuk mengembangkan, mengirim, dan menjalankan aplikasi dalam kontainer.",
-    image: "/src/assets/icons/Docker.png",
+    image: docker,
   },
   {
     quote: "GitHub",
     name: "Platform hosting kode sumber untuk versi kontrol menggunakan Git.",
-    image: "/src/assets/icons/github.png",
+    image: github,
   },
 
   {
     quote: "Podman",
     name: "Tool untuk mengelola kontainer dan pods yang kompatibel dengan Docker.",
-    image: "/src/assets/icons/pngaaa.com-5307940.png",
+    image: podman,
   },
   {
     quote: "Postman",
     name: "Tool untuk pengujian API yang memungkinkan Anda untuk mengirim permintaan HTTP.",
-    image: "/src/assets/icons/Postman.png",
+    image: postman,
   },
   {
     quote: "React JS",
     name: "Library JavaScript untuk membangun antarmuka pengguna, memudahkan pengembangan aplikasi web interaktif.",
-    image: "/src/assets/icons/react.png",
+    image: react,
   },
   {
     quote: "Express JS",
     name: "Framework web minimalis untuk Node.js, digunakan untuk membangun aplikasi dan API dengan cepat.",
-    image: "/src/assets/icons/Express.png",
+    image: express,
   },
 ];

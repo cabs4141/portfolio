@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import profile from "../../assets/img/profile.jpg";
 
-export default function MyCard() {
+export default function MyCard({ href }) {
   return (
     <Card isFooterBlurred className="w-fit h-[220px] col-span-12 sm:col-span-7 ">
       {/* <CardHeader className="absolute z-10 top-1 flex-col items-start">
@@ -16,9 +16,11 @@ export default function MyCard() {
           </div>
         </div>
         <div className="pt-2">
-          <Button radius="full" size="sm" className="max-w-10 max-h-6">
-            Whats App
-          </Button>
+          <a href={href}>
+            <Button radius="full" size="sm" className="max-w-10 max-h-6">
+              Here
+            </Button>
+          </a>
         </div>
       </CardFooter>
     </Card>

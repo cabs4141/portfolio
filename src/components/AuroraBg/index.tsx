@@ -38,7 +38,7 @@ export function AuroraBgDemo({ id }) {
         <p className="text-neutral-500 max-w-lg mx-auto my-2 text-base md:text-md text-center relative z-10 mt-2 md:mt-4">
           Frontend Engineer and Backend Engineer. Experience in React.js and Express.js for developing a website and web applications.
         </p>
-        <MyCard />
+        <MyCard href="#contactme" />
       </motion.div>
     </AuroraBg>
   );

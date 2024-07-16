@@ -4,7 +4,7 @@ import profile from "../../assets/img/profile.jpg";
 
 export default function MyCard({ href }) {
   return (
-    <Card isFooterBlurred className="w-fit h-[220px] col-span-12 sm:col-span-7 mt-2">
+    <Card isFooterBlurred className="w-fit h-[220px] col-span-12 sm:col-span-7 mt-12 xl:mt-6">
       <Image removeWrapper alt="Relaxing app background" className="z-0 w-auto h-64 object-cover" src={profile} />
       <CardFooter className="max-h-4 pb-6 absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
         <div className="flex flex-grow gap-2 pt-2 items-center">

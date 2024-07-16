@@ -29,7 +29,7 @@ export function SpotLight() {
     { link: "contactme" }, // Tambahkan ini
   ];
   return (
-    <div className="flex flex-col items-center xl:h-full sm:h-screen max-w-screen rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="flex flex-col items-center  mt-8 xl:h-full sm:h-screen max-w-screen rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <NextNav navItems={navItems} />
       <Medsos />
       <div className="my-4">

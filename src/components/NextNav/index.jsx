@@ -1,12 +1,16 @@
 import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button } from "@nextui-org/react";
 import ContactButton from "./contactme";
+import moai from "../../assets/icons/pngwing.com.png";
 
 const NextNav = ({ navItems }) => {
   return (
-    <Navbar className=" bg-transparent">
+    <Navbar className="fixed   bg-transparent">
       <NavbarBrand className="absolute left-1/2 transform -translate-x-1/2 sm:relative sm:left-0 sm:transform-none">
-        <p className="font-bold text-inherit bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold mt-4 md:mt-0">P, INFO LOKER</p>
+        <div className="flex flex-row items-center gap-2">
+          <p className="font-bold text-inherit bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold  ">P, INFO LOKER</p>
+          <img src={moai} alt="" className="max-w-7" />
+        </div>
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {navItems.map((item) => (

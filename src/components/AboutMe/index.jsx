@@ -1,5 +1,6 @@
 import React from "react";
 import AboutCard from "./about-card";
+import TechStack from "./TechStack";
 
 const AboutMe = ({ id }) => {
   return (
@@ -9,8 +10,9 @@ const AboutMe = ({ id }) => {
       <div className="absolute top-8 w-full flex justify-center mb-8">
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500">About Me</p>
       </div>
-      <div className="flex flex-col items-center justify-center h-screen mt-42">
+      <div className="flex flex-col xl:flex-row items-center justify-center h-screen mt-42 pb-20 gap-4">
         <AboutCard />
+        <TechStack />
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export default function ContactMe({ id }) {
         <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">Contact me</h2>
         <p className="mt-2 text-lg leading-8 text-gray-400">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl ">
+      <form className="mx-auto mt-16 max-w-xl ">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-300">

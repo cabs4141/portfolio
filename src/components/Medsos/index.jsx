@@ -7,7 +7,7 @@ import wa from "../../assets/icons/wa.png";
 
 const Medsos = () => {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-4 xl:-pt-20 pt-20">
+    <div className="flex flex-wrap items-center justify-center gap-4 xl:-pt-10 pt-20">
       <a href="https://www.instagram.com/bindarama_" target="_blank">
         <Avatar isBordered radius="sm" src={ig} size="sm" />
       </a>

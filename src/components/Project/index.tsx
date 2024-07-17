@@ -3,8 +3,12 @@ import MyCard from "../MyCard/index.jsx";
 import kube from "../../assets/img/kube.png";
 import jrmonas from "../../assets/img/jrmonas.png";
 import undangan from "../../assets/img/undangan.png";
+import { motion, useInView } from "framer-motion";
 
 const Project = ({ id }) => {
+  const ref = React.useRef(null);
+  const inView = useInView(ref, { once: false });
+
   return (
     <div id={id} className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex flex-col items-center justify-center mt-28 xl:mt-0">
       {/* Radial gradient for the container to give a faded look */}
@@ -15,9 +19,15 @@ const Project = ({ id }) => {
       <div className="flex flex-wrap justify-center gap-2 mt-2 px-2">
         {" "}
         {/* Reduced gap further */}
-        <MyCard judul="KUBE website" title="Dinas Sosial Kelompok Usaha Bersama" img={kube} />
-        <MyCard judul="JR Monas (Desktop)" title="Jasa Raharja Monitoring Kendaraan Dinas" img={jrmonas} />
-        <MyCard judul="Undangan Pernikahan" title="Website Undangan Pernikahan" img={undangan} />
+        <motion.div ref={ref} initial={{ y: -100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 1 }}>
+          <MyCard judul="KUBE website" title="Dinas Sosial Kelompok Usaha Bersama" img={kube} />
+        </motion.div>
+        <motion.div ref={ref} initial={{ y: -100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 1.5 }}>
+          <MyCard judul="JR Monas (Desktop)" title="Jasa Raharja Monitoring Kendaraan Dinas" img={jrmonas} />
+        </motion.div>
+        <motion.div ref={ref} initial={{ y: -100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 2 }}>
+          <MyCard judul="Undangan Pernikahan" title="Website Undangan Pernikahan" img={undangan} />
+        </motion.div>
       </div>
     </div>
   );

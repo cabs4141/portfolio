@@ -1,28 +1,57 @@
 import { useState } from "react";
+import { Spinner } from "@nextui-org/spinner";
+import { notification, Space } from "antd";
 
 export default function ContactMe({ id }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const result = { name, email, message };
-    console.log(result);
-    fetch("https://portfolio-api-production-be4d.up.railway.app/contact/message", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(result),
+  const openNotificationWithIcon = (type, message) => {
+    notification[type]({
+      message: message,
     });
   };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const result = { name, email, message };
+    console.log(result);
+    try {
+      const response = await fetch("https://portfolio-api-production-be4d.up.railway.app/contact/message", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(result),
+      });
+
+      if (response.status !== 200) {
+        throw new Error("Network response was not ok");
+      }
+
+      // Show success notification
+      openNotificationWithIcon("success", "Message sent successfully!");
+    } catch (error) {
+      console.error("Fetch error:", error);
+      openNotificationWithIcon("error", "Failed to send message");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
-    <div id={id} className="isolate bg-dark px-6 pt-28 pb-28 sm:py-32 lg:px-8">
+    <div id={id} className="relative isolate bg-dark px-6 pt-28 pb-28 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">Contact me</h2>
         <p className="mt-2 text-lg leading-8 text-gray-400">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
       </div>
-      <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl ">
+      <form onSubmit={handleSubmit} className=" mx-auto mt-16 max-w-xl">
+        {loading && (
+          <div className="absolute inset-0 flex justify-center items-center bg-opacity-50 bg-gray-500">
+            <Spinner />
+          </div>
+        )}
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-300">
@@ -55,7 +84,6 @@ export default function ContactMe({ id }) {
               />
             </div>
           </div>
-
           <div className="sm:col-span-2">
             <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-300">
               Message

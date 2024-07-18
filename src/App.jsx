@@ -17,7 +17,7 @@ function App() {
       <Project id="section2" />
       <Skills id="section3" />
       <Sertifikat id="section4" />
-      <ContactMe />
+      <ContactMe id="contactme" />
     </>
   );
 }

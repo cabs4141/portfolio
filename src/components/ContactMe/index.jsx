@@ -1,19 +1,3 @@
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
-"use client";
-
 import { useState } from "react";
 
 export default function ContactMe({ id }) {
@@ -25,7 +9,7 @@ export default function ContactMe({ id }) {
     e.preventDefault();
     const result = { name, email, message };
     console.log(result);
-    fetch("http://localhost:3000/contact/message", {
+    fetch("https://portfolio-api-production-be4d.up.railway.app/contact/message", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(result),

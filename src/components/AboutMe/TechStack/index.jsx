@@ -7,7 +7,7 @@ const TechStack = () => {
       <div className="card">
         <div className="card__border"></div>
         <div className="card_title__container">
-          <p className="card_paragraph">Tech stack yang sering saya gunakan</p>
+          <p className="card_paragraph">Tech stack that I often use</p>
           <span className="card_title">MERN Stack</span>
         </div>
         <hr className="line" />

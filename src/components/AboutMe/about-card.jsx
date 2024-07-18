@@ -6,7 +6,7 @@ const AboutCard = () => {
   const [isFollowed, setIsFollowed] = React.useState(false);
 
   return (
-    <Card className="lg:max-w-[640px] max-w-[320px] sm:max-w-[480px] max-h-[440px] sm:max-h-[80px] mb-10 xl:min-h-[300px] mt-32 xl:mt-10">
+    <Card className="lg:max-w-[640px] max-w-[320px] sm:max-w-[480px] max-h-[440px] sm:max-h-[80px] mb-10 xl:min-h-[300px] md:min-h-[250px] mt-32 xl:mt-10 md:mt-60">
       <CardHeader className="justify-between">
         <div className="flex gap-5">
           <Avatar isBordered radius="full" size="md" src={profile3} />
@@ -17,13 +17,13 @@ const AboutCard = () => {
         </div>
       </CardHeader>
       <CardBody className="px-3 py-0 text-small text-default-400">
-        <p className="mb-4">Hi, saya Binda, saat ini sebagai mahasiswa jenjang S1 Ilmu Komputer. Saya berasal dari Selong, Lombok Timur, Nusa Tenggara Barat</p>
-        <p className="mb-4">Pengalaman saya menjadi Web Developer dimulai sejak tahun 2023 saat magang di Dinas Sosial Provinsi NTB, yaitu membuat Website sederhana pengelola data penerima bantuan sosial.</p>
+        <p className="mb-4">Hi, I am Binda, currently an undergraduate student in Computer Science. I am from Selong, East Lombok, West Nusa Tenggara.</p>
+        <p className="mb-4">I started my experience as a Web Developer in 2023 during an internship at the Social Service Office of NTB Province, where I created a simple website to manage social assistance recipient data.</p>
         <p className="mb-4">
-          Saat ini saya sudah menguasai beberapa teknologi untuk kebtuhan development, seperti React.js di frontend, Express.js dan Hapi.js di backend dengan MySql sebagai database, dan saya gunakan container seperti Docker atau Podman
-          untuk kebutuhan deployment dan monitoring
+          Currently, I have mastered several technologies for development needs, such as React.js for the frontend, Express.js and Hapi.js for the backend with MySQL as the database, and I use containers like Docker or Podman for deployment
+          and monitoring purposes.
         </p>
-        <p>Untuk styling saya menggunakan Tailwind yang dikombinasikan dengan framework seperti Aceternity UI dan Next UI yang jua digunakan untuk membuat website ini.</p>
+        <p>For styling, I use Tailwind combined with frameworks like Aceternity UI and Next UI for building websites.</p>
       </CardBody>
       <CardFooter className="gap-3">
         <div className="flex gap-1">

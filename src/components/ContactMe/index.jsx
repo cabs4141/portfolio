@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Spinner } from "@nextui-org/spinner";
-import { notification, Space } from "antd";
+import { notification } from "antd";
 
 export default function ContactMe({ id }) {
   const [name, setName] = useState("");

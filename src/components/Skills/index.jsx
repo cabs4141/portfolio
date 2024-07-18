@@ -27,60 +27,58 @@ export function Skills({ id }) {
 
 const testimonials = [
   {
-    quote: "Javascript",
-    name: "Bahasa pemrograman yang selalu saya gunakan ketika development aplikasi atau website.",
+    quote: "JavaScript",
+    name: "A programming language that I always use when developing applications or websites.",
     image: javascript,
   },
   {
     quote: "Node.js",
-    name: "JavaScript runtime yang memungkinkan untuk menjalankan JavaScript di sisi server.",
+    name: "JavaScript runtime that allows you to run JavaScript on the server side.",
     image: node,
   },
   {
     quote: "MySQL",
-    name: "Sistem manajemen basis data relasional open-source yang digunakan untuk menyimpan data aplikasi.",
+    name: "An open-source relational database management system used to store application data.",
     image: mysql,
   },
-
   {
     quote: "Tailwind CSS",
-    name: "Framework CSS utilitarian untuk membangun antarmuka pengguna yang responsif.",
+    name: "A utility-first CSS framework for building responsive user interfaces.",
     image: tailwind,
   },
   {
     quote: "Vite",
-    name: "Bundler dan development server yang cepat untuk aplikasi web modern.",
+    name: "A fast bundler and development server for modern web applications.",
     image: vite,
   },
   {
     quote: "Docker",
-    name: "Platform untuk mengembangkan, mengirim, dan menjalankan aplikasi dalam kontainer.",
+    name: "A platform for developing, shipping, and running applications in containers.",
     image: docker,
   },
   {
     quote: "GitHub",
-    name: "Platform hosting kode sumber untuk versi kontrol menggunakan Git.",
+    name: "A source code hosting platform for version control using Git.",
     image: github,
   },
-
   {
     quote: "Podman",
-    name: "Tool untuk mengelola kontainer dan pods yang kompatibel dengan Docker.",
+    name: "A tool for managing containers and pods, compatible with Docker.",
     image: podman,
   },
   {
     quote: "Postman",
-    name: "Tool untuk pengujian API yang memungkinkan Anda untuk mengirim permintaan HTTP.",
+    name: "A tool for API testing that allows you to send HTTP requests.",
     image: postman,
   },
   {
     quote: "React JS",
-    name: "Library JavaScript untuk frontend, memudahkan pengembangan aplikasi web interaktif.",
+    name: "A JavaScript library for the frontend, facilitating the development of interactive web applications.",
     image: react,
   },
   {
     quote: "Express JS",
-    name: "Framework web minimalis untuk Node.js, digunakan untuk membangun aplikasi dan API dengan cepat.",
+    name: "A minimal web framework for Node.js, used for quickly building applications and APIs.",
     image: express,
   },
 ];

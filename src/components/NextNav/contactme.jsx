@@ -4,7 +4,7 @@ const ContactButton = ({ onClick, href }) => {
   return (
     <a href={href}>
       <button className="uiverse" onClick={onClick}>
-        <div className="wrapper">
+        <div className="wrapper font-jetbrains">
           <span>Contact Me</span>
           <div className="circle circle-12"></div>
           <div className="circle circle-11"></div>

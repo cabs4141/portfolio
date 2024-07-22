@@ -43,8 +43,8 @@ export default function ContactMe({ id }) {
   return (
     <div id={id} className="relative isolate bg-dark px-6 pt-28 pb-28 sm:py-32 lg:px-8">
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl">Contact me</h2>
-        <p className="mt-2 text-lg leading-8 text-gray-400">Aute magna irure deserunt veniam aliqua magna enim voluptate.</p>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-400 sm:text-4xl ">Contact me</h2>
+        <p className="mt-4 text-lg leading-8 text-gray-400">Send message here 🚀</p>
       </div>
       <form onSubmit={handleSubmit} className=" mx-auto mt-16 max-w-xl">
         {loading && (

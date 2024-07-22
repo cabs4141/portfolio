@@ -11,6 +11,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}", "./node_modules/@tremor/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        jetbrains: ["JetBrains Mono", "monospace"],
+      },
+      colors: {
+        white: "#FFFFFF",
+        black: "#000000",
+        cookies: "#C4841D",
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
         scroll: "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
@@ -37,7 +45,7 @@ export default {
   darkMode: "class",
 
   plugins: [
-    nextui(),
+    nextui({ addCommonColors: true }),
     require("@headlessui/tailwindcss"),
     require("@tailwindcss/forms"),
     addVariablesForColors,

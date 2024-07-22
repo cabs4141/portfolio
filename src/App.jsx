@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Sertifikat from "./components/Sertifikat";
 import ContactMe from "./components/ContactMe";
 import { SpotLight } from "./components/SpotLight";
+import MyFooter from "./components/MyFooter";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Skills id="section3" />
       <Sertifikat id="section4" />
       <ContactMe id="contactme" />
+      <MyFooter />
     </>
   );
 }

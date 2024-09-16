@@ -20,8 +20,8 @@ const AboutCard = () => {
         <p className="mb-4">Hi, I am Binda, currently an undergraduate student in Computer Science. I am from Selong, East Lombok, West Nusa Tenggara.</p>
         <p className="mb-4">I started my experience as a Web Developer in 2023 during an internship at the Social Service Office of NTB Province, where I created a simple website to manage social assistance recipient data.</p>
         <p className="mb-4">
-          Currently, I have mastered several technologies for development needs, such as React.js for the frontend, Express.js and Hapi.js for the backend with MySQL as the database, and I use containers like Docker or Podman for deployment
-          and monitoring purposes.
+          Currently, I have mastered several technologies for development needs, such as React.js for the frontend, Express.js for the backend with Mongo DB as the database, and I use containers like Docker or Podman for deployment and
+          monitoring purposes.
         </p>
         <p>For styling, I use Tailwind combined with frameworks like Aceternity UI and Next UI for building websites.</p>
       </CardBody>

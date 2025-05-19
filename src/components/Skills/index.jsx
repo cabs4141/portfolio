@@ -19,7 +19,7 @@ export function Skills({ id }) {
       <div className="absolite top-8 w-full flex justify-center mb-8">
         <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-300 to-neutral-500">Specified Skills</p>
       </div>
-      <p className="text-neutral-500 px-8 max-w-lg mx-auto mb-8 text-base md:text-md text-center relative z-10  pt-10">Semua skill yang muter dibawah masih belum expert, karna saya masih pemula 😌🙏</p>
+      {/* <p className="text-neutral-500 px-8 max-w-lg mx-auto mb-8 text-base md:text-md text-center relative z-10  pt-10">Semua skill yang muter dibawah masih belum expert, karna saya masih pemula 😌🙏</p> */}
       <InfiniteMovingCards items={testimonials} direction="right" speed="slow" />
     </div>
   );

@@ -29,9 +29,6 @@ const AboutCard = () => {
         <div className="flex gap-1">
           <p className=" text-small">#masihpemula</p>
         </div>
-        <div className="flex gap-1">
-          <p className=" text-small">#ajarindongbang</p>
-        </div>
       </CardFooter>
     </Card>
   );

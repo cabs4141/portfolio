@@ -2,7 +2,7 @@ import React from "react";
 import MyCard from "../MyCard/index.jsx";
 import kube from "../../assets/img/kube.png";
 import jrmonas from "../../assets/img/jrmonas.png";
-import undangan from "../../assets/img/undangan.png";
+import angkringan from "../../assets/img/Screenshot (362).png";
 import { motion, useInView } from "framer-motion";
 
 const Project = ({ id }) => {
@@ -25,8 +25,8 @@ const Project = ({ id }) => {
         <motion.div ref={ref} initial={{ y: -100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 1.5 }}>
           <MyCard judul="JR Monas (Desktop)" title="Jasa Raharja Monitoring Kendaraan Dinas" img={jrmonas} />
         </motion.div>
-        <motion.div ref={ref} initial={{ y: -100, opacity: 0 }} animate={inView ? { y: 0, opacity: 1 } : {}} transition={{ duration: 2 }}>
-          <MyCard judul="Undangan Pernikahan" title="Website Undangan Pernikahan" img={undangan} />
+        <motion.div ref={ref} initial={{ y: -100, opacity: 0 }} animate={inView ? { y: -100, opacity: 1, marginTop: 100 } : {}} transition={{ duration: 2 }}>
+          <MyCard judul="Angkringan 151" title="Angkringan 151 E-Commerce" img={angkringan} />
         </motion.div>
       </div>
     </div>
